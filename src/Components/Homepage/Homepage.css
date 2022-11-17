@@ -1,0 +1,208 @@
+.homepage {
+	display: block;
+	position: relative;
+	height: calc(100vh - 3.125rem);
+	min-height: 43.75rem;
+	max-height: 62.5rem;
+	margin-top: 6.25rem;
+	overflow: visible !important;
+}
+
+.highlights {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.highlights::after {
+	position: absolute;
+	content: "";
+	aspect-ratio: 4.8;
+	width: 100%;
+	background: url("https://res.cloudinary.com/tommello/image/upload/v1668581678/Projeto%20Call%20of%20Duty/mw2-neon-border_v8anhv.png")
+		center center no-repeat;
+	background-size: cover;
+	top: 100%;
+	left: -25%;
+	transform: translate(0, -50%);
+}
+
+.simon-ghost-riley-cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url("https://res.cloudinary.com/tommello/image/upload/v1668524292/Projeto%20Call%20of%20Duty/MW2-Ghost-background_aexuaz.png")
+		center center no-repeat;
+	background-size: cover;
+}
+
+.mw2-right-column {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	max-width: 30%;
+	height: 100%;
+	right: 7%;
+	transition: 0.25 all;
+}
+
+.mw2-column-content {
+	position: relative;
+	overflow: hidden;
+	flex-grow: 1;
+	flex-basis: 0;
+  padding-bottom: 2.5rem;
+}
+
+.mw2-game-logo {
+	width: 100%;
+	padding: 0;
+}
+
+#mw2-logo {
+	display: block;
+	width: 100%;
+}
+
+.mw2-slogan {
+	max-width: 39.4375rem;
+	margin-top: 1rem;
+	text-align: center;
+	margin-right: 0;
+}
+
+.mw2-slogan > p {
+	font-family: "stratum2regular", sans-serif;
+	font-weight: 400;
+	margin-bottom: 0.9375rem;
+	color: #ffffff;
+	line-height: 1.4;
+	font-size: clamp(1rem, 1.01vw, 2rem);
+	overflow-wrap: break-word;
+}
+
+.mw2-purchase-btn-small {
+	margin-top: 0.9375rem;
+}
+
+.mw2-purchase-btn-small > a {
+	display: block;
+	position: relative;
+	background: none !important;
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+	font-family: "VA-Text-Caps-Bold", sans-serif;
+	color: #d2d4cd;
+	cursor: pointer;
+	padding: 0.25rem 0.75rem;
+	border: 0.0625rem solid #71af3a;
+	text-shadow: 0 0 0.9375rem #000000;
+	min-width: 5rem;
+	margin: 0 auto;
+	line-height: 1.1;
+	letter-spacing: 0.125rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.mw2-purchase-btn-small > a:hover {
+  color: #FFFFFF;
+  box-shadow: inset 0rem 0rem 1.875rem #BB9934;
+  border: 0.0625rem solid #679E25;
+}
+
+
+.mw2-purchase-btn-small > a::before {
+	position: absolute;
+	display: block;
+	opacity: 1;
+	content: "";
+	background-image: linear-gradient(6deg, #71af3a 0%, #649732 30% 70%, #71af3a 100%);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+  transition: all 0.5s;
+}
+
+.mw2-purchase-btn-small > a:hover::before {
+	opacity: 0;
+}
+
+.mw2-purchase-btn-small > a::after {
+	display: block;
+	position: absolute;
+  opacity: 1;
+	content: "";
+	height: 100%;
+  background-image: linear-gradient(6deg, #71Af3A 0%, #6CA336 30% 70%, #71Af3A 100%);
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -2;
+  transition: all 0.5s;
+}
+
+.mw2-trailer-video {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  transition: 0.25s all;
+  margin: 1.25rem auto 0;
+  cursor: pointer;
+}
+
+.mw2-video-thumb::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: url('https://res.cloudinary.com/tommello/image/upload/v1668585557/Projeto%20Call%20of%20Duty/green-thumbnail-frame_g7vy2f.png') center center no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.mw2-thumb-container {
+  background: url('https://res.cloudinary.com/tommello/image/upload/v1668525206/Projeto%20Call%20of%20Duty/mw2-thumb-trailer_nu6pdw.jpg') center center no-repeat;
+  background-size: cover;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: 0;
+}
+
+.thumb-play-icon {
+  position: absolute;
+    background: #000000CC;
+  border: 0.0625rem solid #7AC32C;
+  border-radius: 0.625rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.75rem;
+  height: 3.75rem;
+  z-index: 5;
+}
+
+.thumb-play-icon::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 0.9375rem 0 0.9375rem 1.5625rem;
+  border-color: transparent transparent transparent #7AC32C;
+}

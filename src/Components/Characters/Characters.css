@@ -1,0 +1,110 @@
+.task-force-141 {
+  color: #FFFFFF;
+}
+
+.task-force-141 h2 {
+  font-family: 'stratum2bold', sans-serif;
+  line-height: 1;
+  font-size: clamp(2.7rem, 4.2vw, 5.7rem);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding: 0 0.9375rem;
+}
+
+.tf-141-gallery {
+  border-bottom: 0.0625rem #5D5D5D solid;
+  border-top: 0.0625rem #5D5D5D solid;
+  background: #FFFFFF0D;
+  backdrop-filter: blur(0.1875rem);
+}
+
+.tf-141-container {
+  position: relative;
+  display: block;
+  user-select: none;
+  max-width: 90%;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+}
+
+.tf-141-content {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tf-141-wrapper {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  width: 106.25rem;
+  transform: translate3d(0, 0, 0);
+}
+
+.tf-141-wrapper::before {
+  display: table;
+  content: '';
+}
+
+.character {
+  display: block;
+  float: left;
+  width: 21.25rem;
+  height: 100%;
+  min-height: 0.0625rem;
+}
+
+.character-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.character-img img{
+  transition: transform 0.6s cubic-bezier(0.35, 0, 0, 1);
+}
+
+.character-wrapper:hover .character-img img {
+  transform: scale(1.05);
+  transition: transform 0.8s cubic-bezier(0.35, 0, 0, 1);
+}
+
+.character-wrapper:hover .character-info {
+  color: #71AF3A;
+  transform: scale(1.05);
+  transition: transform 0.8s cubic-bezier(0.35, 0, 0, 1);
+}
+
+.character-info {
+  position: absolute;
+  width: 100%;
+  background: transparent !important;
+  padding: 0.9375rem;
+  left: 0;
+  bottom: 0;
+  transition: all 0.8s cubic-bezier(0.35, 0, 0, 1);
+}
+
+.character-info > p {
+  font-family: 'stratum2bold', sans-serif;
+  font-size: clamp(1.1rem, 2vw, 3rem);
+  letter-spacing: 0.175rem;
+  text-shadow: 0 0.1875rem 0.375rem #000000;
+  text-transform: uppercase;
+}
+
+.character-info > p > span {
+  display: block;
+}
+
+#soldier-country {
+  position: absolute;
+  top: 61%;
+  right: 5%;
+}

@@ -1,0 +1,96 @@
+/** VA Bold Font */
+@font-face {
+  font-family: 'VA-Text-Caps-Bold';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532606/Projeto%20Call%20of%20Duty/Fonts/VA-Text-Caps-Bold_sbxplh.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/** VA Reg Font */
+@font-face {
+  font-family: 'VA-Text-Regular';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532606/Projeto%20Call%20of%20Duty/Fonts/VA-Text-Regular_k1qt5r.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/** VA IT Font */
+@font-face {
+  font-family: 'VA-Text-Italic';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532606/Projeto%20Call%20of%20Duty/Fonts/VA-Text-Italic_sjszec.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/** VA Bold Italic Font */
+@font-face {
+  font-family: 'VA-Text-Caps-Bold-It';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532606/Projeto%20Call%20of%20Duty/Fonts/VA-Text-Caps-Bold-It_wrdhng.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/** Stratum 2 Fonts */
+@font-face {
+  font-family: 'stratum2bold';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532605/Projeto%20Call%20of%20Duty/Fonts/stratum2bold_fqyxsx.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stratum-light';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532605/Projeto%20Call%20of%20Duty/Fonts/stratum-light_hpykfe.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stratum2medium';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532817/Projeto%20Call%20of%20Duty/Fonts/stratum2medium_krfxwe.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stratum2regular';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532605/Projeto%20Call%20of%20Duty/Fonts/stratum2regular_fn8wa2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stratum-black';
+  src: url('https://res.cloudinary.com/tommello/raw/upload/v1668532605/Projeto%20Call%20of%20Duty/Fonts/stratum-black_xuo5bw.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url('https://res.cloudinary.com/tommello/image/upload/v1668523669/Projeto%20Call%20of%20Duty/mw2-background_ln9c2r.jpg') center no-repeat;
+  background-color: #000000;
+  background-size: cover;
+  line-height: 1;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+.anchor-container a {
+  color: #969696;
+  font-size: 0.75rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s all;
+  letter-spacing: 0.0625rem;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}

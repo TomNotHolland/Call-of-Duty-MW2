@@ -1,0 +1,221 @@
+footer {
+	position: relative;
+	background: #000000;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-container {
+	max-width: 56.25rem;
+	padding: 6.25rem 0.9375rem;
+	margin: 0 auto;
+	transition: 0.8s all;
+}
+
+.footer-links,
+.divider-line,
+.esrb-logo {
+	margin-bottom: 2.5rem;
+}
+
+.footer-links ul,
+.divider-line {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer-links ul li {
+	color: #adabab;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 0.8125rem;
+	letter-spacing: 0.0625rem;
+	text-transform: uppercase;
+	opacity: 1;
+	text-decoration: none;
+}
+
+.footer-links ul li a {
+	color: #adabab;
+	text-decoration: none;
+	transition: 0.5s all;
+}
+
+.footer-links ul li a:hover {
+	color: #ffffff;
+	text-shadow: inset 0.9375rem 0.875rem 1.25rem #ffffff;
+	transition: all 0.5s;
+}
+
+.edge-dot:nth-child(1) {
+	display: flex;
+	flex-direction: row;
+	flex: 0 0 0.125rem;
+	margin-right: 0.25rem;
+	height: 0.125rem;
+	background-color: #ffffff;
+}
+
+.edge-dot:nth-last-child(1) {
+	display: flex;
+	flex-direction: row;
+	flex: 0 0 0.125rem;
+	height: 0.125rem;
+	background-color: #ffffff;
+}
+
+.side-line {
+	display: flex;
+	flex-direction: row;
+	background-color: #ffffff4d;
+	flex: 423 0 0;
+	margin-right: 0.25rem;
+	height: 0.0625rem;
+}
+
+.middle-line {
+	display: flex;
+	flex-direction: row;
+	background-color: #ffffff4d;
+	flex: 93 0 0;
+	margin-right: 0.25rem;
+	height: 0.125rem;
+}
+
+.footer-logos {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logos .studios {
+	width: 50%;
+}
+
+.studios ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer-logos .studios ul li {
+	width: 8.4375rem;
+	margin-bottom: 1.25rem;
+	max-width: 10rem;
+	padding: 0 0.625rem;
+}
+
+.sledgehammer-games a img {
+	height: 2.8125rem;
+	width: auto;
+}
+
+.esrb-logo {
+	width: 48%;
+}
+
+.esrb-logo ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.esrb-logo ul li {
+	width: 6.25rem;
+	margin-bottom: 1.25rem;
+}
+
+.esrb-logo ul li a img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.copyrights {
+	font-size: 0.6875rem;
+	font-family: "Montserrat", sans-serif;
+	color: #adabab;
+	letter-spacing: 0.0625rem;
+	text-shadow: 0 0 1.125rem #646464;
+	line-height: 130%;
+	transition: all 0.8s;
+	margin: 1.25rem auto;
+	max-width: 60rem;
+	opacity: 1;
+}
+
+.copyrights > p {
+	font-size: 0.6875rem;
+	font-family: "Montserrat", sans-serif;
+	color: #adabab;
+	letter-spacing: 0.0625rem;
+	text-shadow: 0 0 1.125rem #646464;
+	line-height: 130%;
+	transition: all 0.8s;
+	margin: 0 auto 1.25rem auto;
+	max-width: 60rem;
+	opacity: 1;
+}
+
+.about.me {
+  display: flex;
+}
+
+#author {
+  position: absolute;
+  right: 90px;
+  bottom: 0;
+  font-family: 'stratum2bold', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  padding: 0 0.9375rem 0.9375rem 0;
+}
+
+.linkedin {
+  position: absolute;
+  width: 2.25rem;
+  height: 2.25rem;
+  right: 40px;
+  bottom: -7px;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  border-radius: 0.625rem;
+}
+
+.linkedin::before {
+  position: absolute;
+  font-family: 'stratum2bold', sans-serif;
+  left: 7px;
+  top: 3px;
+  color: #222222;
+  content: 'in';
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+
+.linkedin:hover {
+  background-color: #71Af3A;
+  transition: all 0.25s;
+}
+
+.linkedin:hover::before {
+  color: #FFF;
+  transition: all 0.25s;
+}
+
+.github {
+  position: absolute;
+  overflow: hidden;
+  right: 0.9375rem;
+  bottom: 0.6875rem;
+  background: #FFF;
+  border-radius: 0.625rem;
+  transition: all 0.35s;
+}
+
+img.github:hover {
+  background: #71Af3A;
+  transition: all 0.35s;
+}

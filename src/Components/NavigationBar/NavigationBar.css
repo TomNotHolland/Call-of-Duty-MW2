@@ -1,0 +1,315 @@
+nav {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.double-header {
+  display: block;
+  position: fixed;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #969696;
+  background: #000000;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 0.5s all;
+}
+
+.global-header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.125rem;
+  z-index: 5;
+  background-image: url('https://res.cloudinary.com/tommello/image/upload/v1668537062/Projeto%20Call%20of%20Duty/nav-pixel-bg_klpbk8.png');
+  background-color: #000000;
+  background-size: 0.125rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 1.125rem #646464;
+}
+
+.global-header-left {
+  display: flex;
+  height: 3.125rem;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo a {
+  display: flex;
+  background: transparent;
+  color: #969696;
+  padding: 0 0.625rem;
+  height: 100%;
+  transition: 0.5s all;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  background: #000000;
+}
+
+.logo img {
+  display: block;
+  width: 6.5625rem;
+}
+
+.global-nav {
+  display: block;
+}
+
+.global-nav > ul {
+  display: flex;
+  height: 100%;
+}
+
+.global-nav ul li a {
+  display: block;
+  letter-spacing: 0.0625rem;
+  padding: 1.125rem 0.9375rem;
+  background-color: transparent;
+  transition: 0.5s all;
+}
+
+.main-item {
+  cursor: pointer;
+  user-select: none;
+}
+
+li.main-item:hover {
+  background: #141414;
+}
+
+li.main-item > a:hover, .alt-item > a:hover {
+  color: #71AF3A;
+}
+
+.global-nav > ul > li > a img {
+  display: inline;
+  width: 0.6875rem;
+  height: 0.5625rem;
+  margin-left: 0.9194rem;
+  transition: all 0.5s;
+}
+
+.main-item:hover a img {
+  transform: rotate(-180deg);
+}
+
+.global-nav li.main-item {
+  position: relative;
+}
+
+.global-header-right {
+  display: flex;
+}
+
+ul.submenu {
+  display: none;
+  position: absolute;
+  top: 47px;
+  z-index: 100;
+  width: 16.5625rem;
+}
+
+.global-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-area {
+  display: flex;
+  padding: 1.1875rem 0.9375rem;
+}
+
+.login-area a {
+  display: block;
+  margin: 0 0.3125rem
+}
+
+.login-area a:hover {
+  color: #FFFFFF;
+}
+
+.mycod-area a{
+  position: relative;
+  padding: 1.1875rem 0.9375rem 1.1875rem 2.8125rem;
+  background: transparent;
+}
+
+.mycod-area a::before {
+  position: absolute;
+  background: url('https://res.cloudinary.com/tommello/image/upload/v1668572738/Projeto%20Call%20of%20Duty/icon-sgt-rank_f9drpl.png') center center no-repeat;
+  content: '';
+  width: 1.25rem;
+  height: 1.125rem;
+  top: 50%;
+  left: 0.875rem;
+  transform: translate(0, -50%);
+  background-size: contain;
+  opacity: 0.5;
+  transition: all 0.5;
+}
+
+.mycod-area:hover a{
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.purchase-mw2 {
+  position: relative;
+  top: 0;
+  transition: all 0.5s;
+}
+
+.purchase-mw2 a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  background: none !important;
+  background-color: transparent;
+  text-align: center;
+  font-family: inherit;
+  font-family: 'VA-Text-Caps-Bold';
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: 0.125rem;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1;
+  transition: all 0.5s;
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  border: none;
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-decoration: none;
+  border: 0.0625rem solid #71AF3A;
+  text-shadow: 0 0 0.9375rem #000000;
+  font-size: 1.125rem;
+  padding: 0.875rem 0.9375rem !important;
+}
+
+.purchase-mw2 a::before {
+  display: block;
+  position: absolute;
+  content: '';
+  background-image: linear-gradient(6deg, #71AF3A 0%, #649732 30% 70%, #71Af3A 100%);
+  transition: all 0.5s;
+  opacity: 1;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.purchase-mw2 a::after {
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: linear-gradient(6deg, #71Af3A 0%, #6CA336 30% 70%, #71Af3A 100%);
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  z-index: -2;
+}
+
+.purchase-mw2 a:hover {
+  color: #FFFFFF;
+  box-shadow: inset 0px 0px 1.875rem #BB9934;
+  border: 0.0625rem solid #679E25;
+}
+
+.purchase-mw2 a:hover::before {
+  opacity: 0;
+}
+
+.game-header {
+  background: #000000;
+}
+
+.mw2-game-subheader-left {
+  display: flex;
+  height: 3.125rem;
+}
+
+.subheader-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 0.625rem;
+  width: 7.125rem;
+}
+
+.subheader-logo a img {
+  height: 1.25rem;
+}
+
+.mw2-game-nav {
+  display: flex;
+  height: 100%;
+}
+
+.mw2-game-nav > ul > li > a {
+  display: block;
+  padding: 1.125rem 0.9375rem;
+  background-color: transparent;
+}
+
+.mw2-game-nav > ul > li > a:hover {
+  color: #FFFFFF;
+}
+
+.features-option {
+  position: relative;
+}
+
+.features-option:hover {
+  background: #141414;
+}
+
+.mw2-game-nav > ul > li > a > img {
+  display: inline;
+  width: 0.6875rem;
+  height: 0.5625rem;
+  margin-left: 0.9194rem;
+  transition: all 0.5s;
+}
+
+.mw2-game-nav > ul {
+  display: flex;
+}
+
+.mw2-game-nav > ul > li:hover a img {
+  transform: rotate(-180deg);
+}
+
+.option-games:hover #games, .option-esports:hover #esports, .option-shop:hover #shop, .features-option:hover #features {
+  display: block;
+  transition: 0.5s all ease;
+}

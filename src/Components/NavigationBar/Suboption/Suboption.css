@@ -1,0 +1,63 @@
+div.border-2 {
+  display: block;
+  position: absolute;
+  border: 0rem solid #FFFFF000;
+  margin: -1rem 0 0 -2.1875rem;
+  content: "";
+  height: 3.125rem;
+  background-color: #FFFFF000;
+  transition: 0.15s all;
+}
+
+.border-2:hover {
+  background-color: #FFFFFF10;
+  border: 0rem solid #FFFFFF10;
+}
+
+.sub-option > a.option-anchor {
+  display: block;
+  position: relative;
+  background: #222222;
+  padding: 1.1875rem 2.1875rem;
+}
+
+.sub-option a:hover {
+  color: #FFFFFF;
+  background: #141414;
+  text-shadow: 0 0 1.125rem #C8C8C8;
+}
+
+.sub-option p {
+  font-size: 0.75rem;
+  letter-spacing: 0.0625rem;
+  overflow-wrap: break-word;
+}
+
+.sub-option a > p::before, .sub-option a > p::after {
+  position: absolute;
+  content: '|';
+  margin-top: -0.0625rem;
+  transform: translate(0, 0);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.sub-option a > p::before {
+  content: '|';
+  margin-right: 0.625rem;
+}
+
+.sub-option a > p::after {
+  content: '|';
+  margin-left: -0.5rem;
+}
+
+li.sub-option:hover a > p::before {
+  transform: translate(-0.9375rem, 0);
+  opacity: 0.5;
+}
+
+li.sub-option:hover a > p::after {
+  transform: translate(0.9375rem, 0);
+  opacity: 0.5;
+}
